@@ -18,45 +18,59 @@ export default function LangSwitcher() {
       className="
         fixed bottom-6 right-6 z-40
         group
-        flex items-center gap-3
-        rounded-2xl
-        border border-white/10
-        bg-zinc-950/95
-        backdrop-blur-xl
-        px-3 py-3
-        shadow-[0_10px_40px_rgba(0,0,0,0.35)]
+        overflow-hidden
+        border border-[#ec397e]
+        bg-black
         transition-all duration-300
-        hover:scale-[1.03]
-        hover:border-emerald-500/30
-        hover:shadow-[0_10px_40px_rgba(16,185,129,0.18)]
+        hover:scale-[1.04]
+        hover:shadow-[0_0_30px_rgba(236,57,126,0.28)]
         disabled:opacity-60
         disabled:cursor-not-allowed
       "
     >
-      {/* Icon */}
-      <div
-        className="
-          flex h-8 w-8 items-center justify-center
-          rounded-2xl
-          
-        "
-      >
-        <Languages className="w-5 h-5 text-white" />
-      </div>
+      <div className="flex items-center">
+        {/* Current */}
+        <div
+          className={`
+            flex items-center gap-2 px-4 py-3
+            transition-all duration-300
+            ${
+              locale === "es"
+                ? "bg-[#ec397e] text-white"
+                : "bg-white text-black"
+            }
+          `}
+        >
+          <Languages className="h-4 w-4" />
 
-      {/* Text */}
-      <div className="text-left">
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-bold text-white">
-            {locale === "es" ? "Español" : "English"}
+          <span className="text-xs font-black tracking-[0.18em] uppercase">
+            ES
           </span>
+        </div>
 
+        {/* Divider */}
+        <div className="h-12 w-px bg-[#ec397e]/30" />
+
+        {/* Next */}
+        <div
+          className={`
+            flex items-center px-4 py-3
+            transition-all duration-300
+            ${
+              locale === "en"
+                ? "bg-[#ec397e] text-white"
+                : "bg-white text-black"
+            }
+          `}
+        >
+          <span className="text-xs font-black tracking-[0.18em] uppercase">
+            EN
+          </span>
         </div>
       </div>
 
-      {/* Loading pulse */}
       {isPending && (
-        <div className="absolute inset-0 rounded-2xl border border-emerald-400/40 animate-pulse" />
+        <div className="absolute inset-0 bg-[#ec397e]/10 animate-pulse" />
       )}
     </button>
   );

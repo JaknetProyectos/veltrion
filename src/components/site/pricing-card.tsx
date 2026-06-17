@@ -17,50 +17,67 @@ export function PricingCard({ plan }: { plan: Plan }) {
   return (
     <div
       className={cn(
-        "group relative flex flex-col rounded-[1.75rem] border bg-white p-6 transition-all duration-300",
-        plan.popular
-          ? "border-primary/25 shadow-[0_28px_70px_-24px_hsl(var(--brand-blue)/0.55)]"
-          : "border-border/70 shadow-[0_20px_55px_-32px_rgba(13,30,55,0.45)] hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_28px_65px_-26px_hsl(var(--brand-blue)/0.4)]"
+        "group relative flex flex-col overflow-hidden border transition-all duration-300",
+        "bg-black border-white/10",
+        "hover:-translate-y-1 hover:border-[#ec397e]/40",
+        "hover:shadow-[0_20px_60px_rgba(236,57,126,0.18)]",
+        plan.popular &&
+          "border-[#ec397e] shadow-[0_24px_70px_rgba(236,57,126,0.22)]"
       )}
     >
+      {/* TOP BAR */}
+      <div className="h-1 w-full bg-[#ec397e]" />
+
+      {/* POPULAR */}
       {plan.popular && (
-        <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-white px-5 py-1.5 text-xs font-bold text-navy shadow-[0_8px_20px_-6px_rgba(13,30,55,0.3)] ring-1 ring-border/80">
-          {t("popular")}
-        </span>
+        <div className="absolute right-0 top-0 bg-[#ec397e] px-4 py-2">
+          <span className="text-[10px] font-black uppercase tracking-[0.22em] text-white">
+            {t("popular")}
+          </span>
+        </div>
       )}
 
-      {/* Price box */}
-      <div className="rounded-2xl bg-brand-chip/60 px-5 py-6">
-        <h3 className="font-display text-lg font-bold text-navy">
-          {plan.name}
-        </h3>
+      {/* CONTENT */}
+      <div className="flex flex-1 flex-col p-7">
+        {/* HEADER */}
+        <div className="border-b border-white/10 pb-6">
+          <p className="text-xs font-black uppercase tracking-[0.24em] text-[#ec397e]">
+            Veltrion
+          </p>
 
-        <p className="mt-3 font-display text-[2.6rem] font-extrabold leading-none text-primary">
-          $ {formatPrice(plan.price)}
-        </p>
+          <h3 className="mt-4 text-2xl font-black tracking-tight text-white">
+            {plan.name}
+          </h3>
 
-        <p className="mt-4 text-sm font-semibold text-primary/75">
-          {plan.unit}
-        </p>
-      </div>
+          <div className="mt-6 flex items-end gap-2">
+            <span className="text-5xl font-black leading-none text-white">
+              ${formatPrice(plan.price)}
+            </span>
+          </div>
 
-      {/* Features */}
-      <ul className="mt-6 flex-1">
-        {plan.features.map((feature, i) => (
-          <li
-            key={feature}
-            className={cn(
-              "py-3.5 text-[13.5px] leading-relaxed text-muted-foreground",
-              i !== 0 && "border-t border-border/60"
-            )}
-          >
-            {feature}
-          </li>
-        ))}
-      </ul>
+          <p className="mt-3 text-sm font-medium uppercase tracking-[0.12em] text-zinc-500">
+            {plan.unit}
+          </p>
+        </div>
 
-      {/* CTA */}
-      <div className="mt-6 flex justify-center">
+        {/* FEATURES */}
+        <ul className="flex-1 py-6">
+          {plan.features.map((feature, i) => (
+            <li
+              key={feature}
+              className={cn(
+                "flex items-start border-white/10 py-4 text-sm leading-relaxed text-zinc-300",
+                i !== 0 && "border-t"
+              )}
+            >
+              <span className="mr-3 mt-[7px] h-[6px] w-[6px] shrink-0 bg-[#ec397e]" />
+
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* CTA */}
         <Button
           onClick={() => {
             addItem(
@@ -73,11 +90,25 @@ export function PricingCard({ plan }: { plan: Plan }) {
               1
             );
           }}
-          variant="navy"
-          size="sm"
-          className="px-6 py-2.5"
+          size="lg"
+          className="
+            mt-2
+            h-14
+            w-full
+            border border-[#ec397e]
+            bg-[#ec397e]
+            text-sm
+            font-black
+            uppercase
+            tracking-[0.16em]
+            text-white
+            transition-all duration-300
+            hover:bg-black
+            hover:text-[#ec397e]
+          "
         >
           <ShoppingCart className="h-4 w-4" />
+
           {t("buy")}
         </Button>
       </div>
