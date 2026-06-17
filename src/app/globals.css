@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 98%;
+    --foreground: 212 40% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 212 40% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 212 40% 9%;
+    --primary: 217 89% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 70% 95%;
+    --secondary-foreground: 212 47% 13%;
+    --muted: 214 32% 95%;
+    --muted-foreground: 214 14% 42%;
+    --accent: 216 80% 94%;
+    --accent-foreground: 212 47% 13%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 90%;
+    --input: 214 30% 88%;
+    --ring: 217 89% 55%;
+    --radius: 0.85rem;
+
+    /* Brand tokens */
+    --navy: 212 52% 11%;
+    --navy-foreground: 0 0% 100%;
+    --brand-blue: 218 83% 53%;
+    --brand-blue-bright: 217 100% 58%;
+    --brand-blue-soft: 216 92% 65%;
+    --section-blue: 218 84% 94%;
+    --chip-blue: 216 86% 91%;
+  }
+
+  .dark {
+    --background: 212 40% 9%;
+    --foreground: 210 40% 98%;
+    --card: 212 40% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 212 40% 9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-poppins {
+    font-family: var(--font-heading) !important;
+  }
+
+  body, .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+

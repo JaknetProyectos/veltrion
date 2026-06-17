@@ -1,0 +1,340 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "summary": "1. Revisión",
+      "shippingPayment": "2. Entrega y Pago"
+    },
+    "success": {
+      "title": "¡Transacción Completada Exitosamente!",
+      "description": "Tu pago ha sido autorizado. El pedido de tus insumos médicos ya está en fase de preparación para su envío.",
+      "paymentReference": "Referencia de Pago:",
+      "paidAmount": "Monto Liquidado:",
+      "transactionStatus": "Estado del Pago:",
+      "approved": "AUTORIZADA",
+      "backToCatalog": "Regresar al Catálogo"
+    },
+    "empty": {
+      "title": "Tu cesta de compras está vacía",
+      "description": "No se detectaron insumos médicos guardados en tu sesión de navegación actual.",
+      "goToStore": "Ver el Catálogo"
+    },
+    "order": {
+      "title": "Productos en tu orden",
+      "clear": "Eliminar Materiales"
+    },
+    "financial": {
+      "title": "Resumen de Cuenta",
+      "couponPlaceholder": "Código promocional",
+      "applyCoupon": "Aplicar",
+      "appliedCoupon": "Cupón {code} (-{discount}%)",
+      "remove": "Quitar",
+      "couponInvalid": "El código de descuento no es válido o ya expiró.",
+      "subtotal": "Subtotal de Productos:",
+      "discount": "Descuento Obtenido:",
+      "netTotal": "Monto Neto a Liquidar:",
+      "tax": "IVA {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Avanzar al Pago",
+      "processing": "Validando Transacción por medio de Etomin...",
+      "payAmount": "Pagar {amount}",
+      "backToCart": "Modificar pedido / Modificar cupón"
+    },
+    "errors": {
+      "declined": "El cargo fue denegado por el banco emisor.",
+      "connection": "Se experimentó un problema de enlace con el procesador de pagos."
+    },
+    "metadata": {
+      "couponApplied": "Cupón de descuento activo",
+      "standardSale": "Adquisición digital convencional"
+    },
+    "form": {
+      "buyerTitle": "Datos de Facturación / Comprador",
+      "addressTitle": "Información de Entrega y Distribución",
+      "paymentTitle": "Pasarela de Cobro Encriptada",
+      "firstName": "Nombre(s) *",
+      "lastName": "Apellidos *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono Móvil (10 posiciones) *",
+      "company": "Empresa (Opcional)",
+      "streetAddress": "Vía pública, Número Exterior y Número Interior *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Colonia / Entre Calles (Opcional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Alcaldía o Localidad *",
+      "state": "Provincia / Estado *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "Código Postal *",
+      "country": "Territorio",
+      "mexico": "México (MX)",
+      "cardNumber": "Número de Tarjeta (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Titular de la Tarjeta *",
+      "cardHolderPlaceholder": "Tal como aparece en la tarjeta",
+      "expiryMonth": "Mes Exp. (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Año Exp. (AAAA) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Código de Verificación (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Proceso gestionado bajo estándares de seguridad"
+    },
+    "images": {
+      "etominAlt": "Etomin",
+      "securePaymentAlt": "Pago seguro"
+    }
+  },
+  "customPlan": {
+    "tax" : {
+      "subtotal" : "Subtotal sin impuestos",
+      "taxes"  : "Impuestos",
+      "total" : "Total"
+    },
+    "hero": {
+      "badge": "Panel de Usuarios",
+      "title": "Añadir presupuesto personalizado"
+    },
+    "imageAlt": "Logo de Nexorithm",
+    "authorized": {
+      "title": "Cobro verificado",
+      "description": "Introduce la clave de cotización y el monto previamente validado con nuestra área comercial para avanzar con la facturación."
+    },
+    "form": {
+      "badge": "Checkout a la medida",
+      "title": "Detalles del presupuesto",
+      "quoteLabel": "Clave de cotización",
+      "quotePlaceholder": "Ej. NEX-2026-001",
+      "amountLabel": "Cifra acordada",
+      "amountPlaceholder": "0.00",
+      "taxNote": "+ El impuesto correspondiente en el siguiente paso."
+    },
+    "buttons": {
+      "adding": "Sumando a la cesta...",
+      "addToCart": "Añadir a la cesta"
+    },
+    "errors": {
+      "quoteRequired": "Es necesario proporcionar un identificador de cotización válido.",
+      "invalidAmount": "Es necesario indicar una cifra financiera válida."
+    }
+  },
+  "header": {
+    "logoAlt": "Veltrion",
+    "titleAlt": "Veltrion",
+    "cart": "Carrito",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "nav": {
+      "home": "Portada",
+      "development": "Desarrollo",
+      "contact": "Platiquemos"
+    }
+  },
+   "hero": {
+    "title": {
+      "line1": "Hosting potente",
+      "line2": "para proyectos que",
+      "highlight": "necesitan velocidad"
+    },
+    "description": "Infraestructura optimizada, seguridad avanzada y soporte humano real para que tu sitio cargue rápido, permanezca estable y esté listo para crecer sin límites.",
+    "contactButton": "Contáctanos"
+  },
+  "nextLevel": {
+    "title": "Lleva tu app al siguiente nivel con Veltrion",
+    "description": "En <strong>Veltrion</strong>, optimizamos y mejoramos el rendimiento de tus aplicaciones para hacerlas más funcionales, seguras y eficientes. Combinamos tecnología, estrategia y experiencia para mantener tu proyecto actualizado y funcionando al máximo digitalmente.",
+    "items": {
+      "0": {
+        "title": "Enfoque estratégico",
+        "body": "Cada proyecto es único. Analizamos, diseñamos y desarrollamos soluciones a medida para crear apps estables, rápidas y escalables. Con nosotros, tu aplicación evoluciona con propósito."
+      },
+      "1": {
+        "title": "Comunicación transparente",
+        "body": "Trabajamos contigo en cada etapa del proceso, manteniendo una comunicación clara y constante para que siempre tengas el control del avance de tu proyecto."
+      },
+      "2": {
+        "title": "Tecnología de vanguardia",
+        "body": "Usamos las herramientas más modernas para garantizar rendimiento, compatibilidad y seguridad en cada aplicación que desarrollamos o mejoramos."
+      }
+    }
+  },
+  "boostPresence": {
+    "personImageAlt": "Persona trabajando en su app",
+    "teamImageAlt": "Equipo colaborando",
+    "title": {
+      "line1": "Impulsa tu",
+      "highlight1": "presencia",
+      "line2": "en el",
+      "highlight2": "mundo digital"
+    },
+    "description": "En <strong>Veltrion</strong>, impulsamos tu crecimiento digital con soluciones a medida. Desarrollamos, optimizamos y mejoramos apps que conectan con tus usuarios y fortalecen tu marca. Nuestro objetivo: que tu tecnología funcione tan bien como tus ideas.",
+    "cards": {
+      "customDevelopment": "Desarrollo personalizado",
+      "continuousOptimization": "Optimización continua"
+    }
+  },
+  "solutions": {
+    "title": {
+      "line1": "Presentamos",
+      "highlight": "soluciones",
+      "line2": "para cada necesidad"
+    },
+    "description": "En <strong>Veltrion</strong>, ayudamos a empresas y emprendedores a crear, mejorar y mantener aplicaciones funcionales, seguras y de alto rendimiento. Cada servicio está diseñado para impulsar tu presencia digital y optimizar la experiencia de tus usuarios.",
+    "tagline": "Tecnología que suma valor: creamos, corregimos y optimizamos tus aplicaciones para que crezcan contigo.",
+    "developmentButton": "Desarrollo",
+    "items": {
+      "customDevelopment": {
+        "title": "Desarrollo a medida",
+        "description": "Aplicaciones únicas, creadas para tus necesidades."
+      },
+      "maintenance": {
+        "title": "Mantenimiento y corrección",
+        "description": "Corregimos errores y mejoramos el rendimiento."
+      },
+      "optimization": {
+        "title": "Optimización continua",
+        "description": "Actualizamos y mejoramos constantemente tu app."
+      }
+    }
+  },
+   "plans": {
+    "title": {
+      "line1": "Planes",
+      "highlight": "que impulsan",
+      "line2": "tus apps"
+    },
+    "description": "Elige la opción que mejor se adapte a tu proyecto. En <strong>Veltrion</strong> te ofrecemos soluciones flexibles para desarrollar, optimizar o mantener tus apps con resultados garantizados.",
+    "viewAllButton": "Ver todos los desarrollos"
+  },
+  "faqSection": {
+    "title": {
+      "highlight": "Preguntas",
+      "text": "frecuentes"
+    },
+    "description": "Resolvemos tus dudas más comunes sobre nuestros servicios de desarrollo y soporte.",
+    "card": {
+      "title": "¿Aún tienes dudas?",
+      "description": "Si no encontraste la respuesta que buscabas, nuestro equipo estará encantado de ayudarte.",
+      "contactButton": "Contáctanos"
+    }
+  },
+  "ctaSection": {
+    "title": {
+      "line1": "Transforma tu app con nosotros",
+      "line2": "Da el",
+      "highlight": "primer paso hoy"
+    },
+    "description": "Estamos listos para ayudarte a crear, mejorar o reparar tus aplicaciones con soluciones inteligentes y personalizadas.",
+    "bottomText": "Lleva tu proyecto al siguiente nivel con",
+    "startButton": "Comienza ahora"
+  },
+  "footer": {
+    "logoAlt": "Veltrion",
+    "titleAlt": "Veltrion",
+    "paymentMethodsAlt": "Métodos de pago",
+    "description": "Creamos, mejoramos y optimizamos tus apps para que funcionen sin límites.",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "rightsReserved": "Todos los derechos reservados."
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "Platiquemos – Veltrion | Hablemos de tu proyecto",
+      "description": "Cuéntanos qué necesitas y nuestro equipo te responderá lo antes posible. Construyamos juntos tu próxima aplicación."
+    },
+    "hero": {
+      "title": {
+        "line1": "Hablemos de tu",
+        "highlight": "próximo proyecto"
+      },
+      "description": "Cuéntanos qué necesitas y te ayudaremos a construir una solución moderna, escalable y enfocada en resultados reales."
+    },
+    "contactSection": {
+      "title": "Estamos listos para ayudarte",
+      "description": "Elige el medio de contacto que prefieras y nuestro equipo te responderá lo antes posible.",
+      "contactButton": "Contactar"
+    },
+    "info": {
+      "phone": {
+        "title": "Llámanos",
+        "description": "Atención personalizada para resolver dudas y proyectos."
+      },
+      "email": {
+        "title": "Correo electrónico",
+        "description": "Escríbenos y te responderemos lo antes posible."
+      },
+      "location": {
+        "title": "Ubicación",
+        "description": "Trabajamos con clientes de todo México y Latinoamérica."
+      }
+    }
+  },
+  "contactForm": {
+    "title": "Envíanos un mensaje",
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "description": "Gracias por contactarnos. Nuestro equipo te responderá lo antes posible."
+    },
+    "fields": {
+      "name": "Tu nombre",
+      "lastname": "Tu apellido",
+      "email": "Tu correo electrónico",
+      "subject": "Asunto",
+      "message": "Tu mensaje"
+    },
+    "terms": {
+      "prefix": "Acepto los",
+      "link": "términos y condiciones",
+      "suffix": "para el uso de mis datos enviados."
+    },
+    "buttons": {
+      "submit": "Enviar",
+      "sending": "Enviando..."
+    }
+  },
+  "developmentPage": {
+    "metadata": {
+      "title": "Desarrollo – Veltrion | Desarrollo, optimización y mantenimiento de apps",
+      "description": "Elige el plan ideal para desarrollar, optimizar o mantener tu aplicación con soluciones modernas, escalables y enfocadas en resultados."
+    },
+    "plans": {
+      "badge": "Soluciones Veltrion",
+      "description": "Planes diseñados para empresas, startups y proyectos que necesitan velocidad, estabilidad y una experiencia moderna."
+    },
+    "specialized": {
+      "title": {
+        "line1": "Atención",
+        "highlight": "especializada"
+      },
+      "description1": "Todos nuestros servicios se basan en las horas contratadas previamente. Al concluir el tiempo acordado, cualquier trabajo adicional necesario para completar el proyecto será considerado un ajuste fuera del alcance original.",
+      "description2": "Dichos ajustes se facturarán por separado a la tarifa horaria previamente acordada, y se requerirá autorización expresa del cliente antes de proceder con cualquier trabajo adicional.",
+      "buyPlanButton": "Adquirir plan",
+      "contactAdvisorButton": "Hablar con un asesor"
+    }
+  },
+  "pricingCard": {
+    "popular": "Popular",
+    "buy": "Adquirir"
+  },
+  "devHero": {
+    "title": "Desarrollo que",
+    "highlight": "impulsa tu negocio",
+    "description": "En <strong>Veltrion</strong> diseñamos soluciones digitales enfocadas en rendimiento, escalabilidad y experiencia de usuario para que tu aplicación crezca sin límites.",
+    "badges": {
+      "securePayment": {
+        "label": "Pago seguro",
+        "description": "Transacciones protegidas y cifradas"
+      },
+      "guarantee": {
+        "label": "Garantía Veltrion",
+        "description": "Procesos confiables y soporte continuo"
+      },
+      "support": {
+        "label": "Atención personalizada",
+        "description": "Acompañamiento directo para tu proyecto"
+      }
+    },
+    "bottomNote": "Creamos, optimizamos y mantenemos aplicaciones modernas con una arquitectura sólida, interfaces fluidas y soporte especializado para empresas que buscan crecer de verdad."
+  }
+}
