@@ -1,3 +1,4 @@
+import { getOptimizedUrl } from "@/lib/images";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -364,7 +365,7 @@ function productCardHTML(item: any) {
       <tr>
         <td>
           <img
-            src="${escapeHtml(productIcon)}"
+            src="${getOptimizedUrl("https://plus.unsplash.com/premium_vector-1734127305210-f2425c1d614f?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")}"
             alt="${productName}"
             width="100%"
             height="220"
